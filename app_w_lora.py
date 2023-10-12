@@ -104,7 +104,7 @@ with gr.Blocks(css=css) as demo:
         <h2 style="text-align: center;">Hotshot-XL Text to GIF</h2>
         <p style="text-align: center;">
             Hotshot-XL is an AI text-to-GIF model trained to work alongside Stable Diffusion XL <br />
-            For faster inference, use the Hotshot website: www.hotshot.co
+            For faster inference, use the <a href="https://www.hotshot.co" target="_blank">Hotshot website</a>
         </p>
                 """)
         prompt = gr.Textbox(label="Prompt")
