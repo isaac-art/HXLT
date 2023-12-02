@@ -108,7 +108,7 @@ css="""
 with gr.Blocks(css=css) as demo:
     with gr.Column(elem_id="col-container"):
         gr.HTML("""
-        <h2 style="text-align: center;">Hotshot-XL Text to GIF</h2>
+        <h2 style="text-align: center;">Hotshot-XL Text to GIFfffff</h2>
         <p style="text-align: center;">
             Hotshot-XL is an AI text-to-GIF model trained to work alongside Stable Diffusion XL <br />
             For faster inference, use the <a href="https://www.hotshot.co" target="_blank">Hotshot website</a>
