@@ -39,17 +39,17 @@ SCHEDULERS = {
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Hotshot-XL inference")
-    parser.add_argument("--pretrained_path", type=str, default="hotshotco/Hotshot-XL")
+    parser.add_argument("--pretrained_path", type=str, default="stabilityai/sdxl-turbo")
     parser.add_argument("--xformers", action="store_true")
     parser.add_argument("--spatial_unet_base", type=str)
     parser.add_argument("--lora", type=str)
     parser.add_argument("--weight_name", type=str)
     parser.add_argument("--output", type=str, required=True)
-    parser.add_argument("--steps", type=int, default=1)
+    parser.add_argument("--steps", type=int, default=2)
     parser.add_argument("--prompt", type=str,
                         default="a bulldog in the captains chair of a spaceship, hd, high quality")
     parser.add_argument("--negative_prompt", type=str, default="blurry")
-    parser.add_argument("--seed", type=int, default=455)
+    parser.add_argument("--seed", type=int, default=123)
     parser.add_argument("--width", type=int, default=672)
     parser.add_argument("--height", type=int, default=384)
     parser.add_argument("--target_width", type=int, default=512)
