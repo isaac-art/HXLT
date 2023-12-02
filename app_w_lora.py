@@ -8,7 +8,15 @@ fs = HfFileSystem()
 
 # execute a CLI command
 def execute_command(command: str) -> None:
-    subprocess.run(command, check=True)
+    try:
+        subprocess.run(command, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error occurred: {e}")
+        print(f"Return code: {e.returncode}")
+        if e.output:
+            print(f"Output: {e.output}")
+        if e.stderr:
+            print(f"Error output: {e.stderr}")
 
 def get_trigger_word(lora_id):
     # Get instance_prompt a.k.a trigger word
