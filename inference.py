@@ -221,7 +221,6 @@ def main():
     with maybe_auto_cast(autocast_type):
 
         images = pipe(args.prompt,
-                      negative_prompt=args.negative_prompt,
                       width=args.width,
                       height=args.height,
                       original_size=(args.og_width, args.og_height),
